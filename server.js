@@ -36,14 +36,14 @@ const server = module.exports = http.createServer((req, res) => {
       return;
     }
 
-    try{
-      res.reqBody =JSON.pars(reqBody);
-    } catch(e) {
-      console.log('you got an error: 400');
-      res.writeHead(400);
-      res.end();
-      return;
-    }
+    // try{
+    //   res.reqBody =JSON.pars(reqBody);
+    // } catch(e) {
+    //   console.log('you got an error: 400');
+    //   res.writeHead(400);
+    //   res.end();
+    //   return;
+    // }
 
     if(req.method === 'GET' && req.url.pathname === '/time') {
       res.writeHead(200, {
