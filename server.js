@@ -75,6 +75,6 @@ const server = module.exports = http.createServer((req, res) => {
 
 });
 
-server.listen(PORT, () => console.log(`estinening on port: ${PORT}`));
+server.listen(PORT, () => console.log(`listening on port: ${PORT}`));
 
 //server.listen(PORT, () => console.log('estinening on port:' + PORT)); // same as the one above
